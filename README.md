@@ -1,32 +1,13 @@
 # jQuery FriendlyId Rails
 
-This library was inspired by [norman/friendly_id](http://github.com/norman/friendly_id), originally developed for **Rails ActiveRecord**.
+This gem packages the jQuery [friendly_id](https://github.com/formaweb/jquery.friendly_id) assets for the Rails asset pipeline, so you never have to download a custom package through the web interface again.
 
 ## Usage
-You can simple get the slug of string:
 
-```javascript
-  $.friendly_id('Café is good');
-  // It will return "cafe-is-good".
+```
+gem 'jquery-friendly_id-rails'
 ```
 
-If you would like, you can change the separator:
+To require jQuery friendly_id, add the following to your application.js:
 
-```javascript
-  $.friendly_id('Café is good', '_');
-  // It will return "cafe_is_good".
-```
-
-And finally, you can dynamically generate the slug:
-
-```javascript
-  $('.input').on('keyup', function() {
-    var slug = $.friendly_id($(this).val());
-    return $('.output').val(slug);
-  });
-```
-
-## Thanks
-- **CakePHP:** for [transliteration map](https://github.com/cakephp/cakephp/blob/master/lib/Cake/Utility/Inflector.php).
-- **Rails**: for the idea of [transliterate and parameterize](https://github.com/rails/docrails/blob/master/activesupport/lib/active_support/inflector/transliterate.rb) methods.
-- **Vinicius Cainelli**: for the [original library](https://github.com/viniciuscainelli/jquery-slug/).
+//= require jquery-friendly_id
