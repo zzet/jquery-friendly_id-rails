@@ -1,0 +1,2 @@
+jQuery friendly_id as well as this gem are licensed under the MIT license (see
+jquery-friendly_id/MIT-LICENSE.txt).
