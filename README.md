@@ -6,13 +6,13 @@ This gem packages the jQuery [friendly_id](https://github.com/formaweb/jquery.fr
 
 ## Usage
 
-```
+``` ruby
 gem 'jquery-friendly_id-rails'
 ```
 
 To require jQuery friendly_id, add the following to your application.js:
 
-```
+``` javascript
 //= require jquery-friendly_id
 ```
 
